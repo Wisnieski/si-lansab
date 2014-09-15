@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="testeCamera" oid="!ed/662b/2883/77C/54148df47717">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="CameraON">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="TC_CameraON" type="bool" oid="!ed/6658/2883/77C/54148eb14be6" instancepath="testeCamera/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Status">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="TC_CameraStatus" type="bool" oid="!ed/6660/2883/77C/54148efa4cdc" instancepath="testeCamera/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="TurnOnFail">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="DF_FalhaCameraON" type="bool" oid="!ed/666b/2883/77C/54148fac4959" instancepath="testeCamera/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="CameraFail">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="DF_FalhaCameraReady" type="bool" oid="!ed/666c/2883/77C/54148fbf34d8" instancepath="testeCamera/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="TM_CameraStatusReady" type="int" oid="!ed/6661/2883/77C/54148f0e22fd" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcEllipse" WidgetName="StatusCamera">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="TM_CameraStatusON" type="int" oid="!ed/6664/2883/77C/54148f624630" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcEllipse" WidgetName="StatusCameraON">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="DF_CameraONString" type="char^4" oid="!ed/68c3/2883/77C/54149b3313ce" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" Size="4" WidgetType="PushButton" WidgetName="CameraON">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Emit2CDS" type="bool" oid="!ed/6a8b/2883/77C/5414a9df2560" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" WidgetType="PushButton" WidgetName="CameraON">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcEllipse" WidgetName="StatusCamera">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcEllipse" WidgetName="StatusCameraON">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Visible" type="bool" oid="!ed/6a8a/2883/77C/5414a9df64af" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Active" type="bool" oid="!ed/6a89/2883/77C/5414a9df1bfe" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="StringSize" type="int" oid="!ed/6aa8/2883/77C/5414aeb55a77" instancepath="testeCamera/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\testeCamera.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" WidgetType="PushButton" WidgetName="CameraON">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
